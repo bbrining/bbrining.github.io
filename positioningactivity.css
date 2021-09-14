@@ -1,0 +1,73 @@
+#div1 {
+    background-color:blue;
+}
+
+
+div {
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: absolute;
+} 
+
+body { 
+    position: relative;
+    height: 150vh;
+    margin: 0px;
+}
+
+#bottom-right {
+    bottom: 0px;
+    right: 0px;
+}
+
+#top-right {
+    top: 0px;
+    right: 0px;
+}
+
+#top-left {
+    top: 0px;
+    left: 0px;
+}
+
+#bottom-left {
+    bottom: 0px;
+    left: 0px;
+}
+
+#ontop-div {
+    top:10px;
+    right: 10px;
+    background-color: blue;
+}
+
+#centered {
+    width: 300px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    margin: -50px 0 0 -150px; /* This is half the width and height to make it centered. 
+        ^This is a shortcut for margin formatting (top right bottom left) *\
+    
+
+}
+
+
+/* 
+
+
+* z-index for bringing things forward to back if not in order
+
+* you do not have to put the unit of measure for values of 0 because it's the origin
+
+* CSS-tricks.com for CSS Hacks
+
+
+
+
+*/

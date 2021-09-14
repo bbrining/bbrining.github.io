@@ -1,0 +1,17 @@
+/* NOTES
+
+    CSS Notation:
+
+        Selector {property: value; property2: value; etc.
+
+    CSS Rule
+        Defines what is happening to element
+
+} */
+
+h1{
+    color:green;}
+
+    /* classes use "." while ids use "#" */
+    background-color: red;
+}

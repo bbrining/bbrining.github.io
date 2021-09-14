@@ -1,0 +1,167 @@
+body { 
+
+    height:100vh;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 10vh; 
+}
+
+#header {
+    background-color: #e39b66;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: Center;
+}
+
+img{
+    height: 250px;
+    float: left;
+    margin: 20px;
+}
+
+h1{
+    color: #667E95;
+    font-size: xx-large;
+}
+
+h4{
+    color: #00284F;
+    padding: 5px;
+    
+}
+
+p{
+    color: #00284F;
+    padding: 5px;
+    
+}
+
+.sidenav { 
+    background-color:#edb4a2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+
+a{
+    display: block;
+    margin: 5px;
+    
+}
+
+#main-content{
+    background-color: #f6f6f6 ;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    overflow:auto;
+    padding: 20px;
+   
+}
+
+.card{
+    padding: 20px;
+    box-shadow: 0px 0px 5px 5px #98B9CB;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+        background-color: lightblue;
+    }
+    .sidenav{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    img{
+        height: auto;
+        width: auto:
+        float: left;
+        margin: 20px;   
+        object-fit: cover;
+        object-position: bottom;
+    
+    }
+
+
+
+
+
+
+    /*.right{
+        display: none;
+    }
+    */
+}
+
+/*
+
+#footer {
+    background-color:#98B9CB; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+*\
+
+
+
+
+
+/* NOTES:
+
+    * grid-template-columns: ... ...;
+
+    * 1/4 fr of the page = 1fr/4frs 
+
+    * float image to get it to show to the left or right
+
+    * make a class for image
+
+    * box shadow: __ __ __ __ __
+        ^box shadow: Horizonal-off Vertical-off Blur Spread Color
+
+    * Media Query below is used for changing the background on mobile and making the webpage overall web friendly
+    @media only screen and (max-width: 600px) {
+        Body{
+            background-color: lightblue;
+        }
+
+    * Rem vs Em
+        * Rem
+        * Em - size * number (i.e. 10px with 2em = 20px resized)
+
+    *  Float positions and formats within a container (doesn't work well with certain elements, very basic)
+
+    * You can use excel to generate html
+
+
+    *Audio link exmaple: http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a
+    
+}
+
+
+    Header: #e39b66
+    Main Content:  #f6f6f6
+    Font: #00284F
+    Footer:#98B9CB
+
+
+
+    #00284F - dark blue
+    #98B9CB - light blue
+    #edb4a2 - pink
+    #667E95 - grey blue
+    #e39b66 - orange
+*\
